@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap");
+
+body {
+  background: #f6f1e8;
+  color: #24344d;
+  font-family: "DM Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 30px;
+}
+
+h1 {
+  color: #243b53;
+  font-size: 3.2em;
+  text-align: center;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+a {
+  color: #3d5a80;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 8px;
+}
+
+a:hover {
+  color: #ee6c4d;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+  max-width: 500px;
+  background-color: #d9e7f0;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 5px 6px #ee6c4d;
+  margin: 20px 10px;
+}
+
+label {
+  margin: 10px 2px 5px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 9px;
+  border: 1px solid #98c1d9;
+  border-radius: 5px;
+  background-color: white;
+  color: #24344d;
+  font-family: "DM Sans", sans-serif;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+button {
+  align-self: center;
+  margin-top: 18px;
+  background-color: #3d5a80;
+  color: white;
+  padding: 9px 18px;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ee6c4d;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  max-width: 800px;
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  min-height: 70px;
+  margin: 10px;
+  padding: 15px;
+  background-color: white;
+  color: #243b53;
+  border: 2px solid #98c1d9;
+  border-radius: 15px;
+  text-align: center;
+}
+
+li a:hover {
+  background-color: #e0fbfc;
+  border-color: #ee6c4d;
+}
+
+img {
+  max-height: 250px;
+  margin: 20px;
+}
+
+footer {
+  font-size: 0.7em;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}

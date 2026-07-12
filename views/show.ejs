@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title><%= foundGame.title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+  </head>
+  <body>
+    <h1><%= foundGame.title %></h1>
+
+    <p>Platform: <%= foundGame.platform %></p>
+    <p>Genre: <%= foundGame.genre %></p>
+
+    <% if (foundGame.isCompleted) { %>
+      <p>This game is completed</p>
+    <% } else { %>
+      <p>This game is not completed</p>
+    <% } %>
+
+    <a href="/games">Back to Games</a>
+    <a href="/games/<%= foundGame._id %>/edit">Edit Game</a>
+
+    <form
+      action="/games/<%= foundGame._id %>?_method=DELETE"
+      method="POST"
+    >
+      <button type="submit">Delete Game</button>
+    </form>
+  </body>
+</html>
